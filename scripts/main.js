@@ -21,6 +21,11 @@ function createGrid(squareTiles){
         let squareDiv = document.createElement("div");
         squareDiv.id = `square-div-${i}`;
         squareDiv.classList.add("square-div");
+        //set mouseover event to fill tile with black
+        squareDiv.addEventListener("mouseenter", (e) => {
+            squareDiv.style.backgroundColor = "black";
+        });
+
         squareDivContainer.appendChild(squareDiv);
     }
 }
