@@ -1,0 +1,40 @@
+body{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #efefef;
+}
+
+#title-content{
+    position: relative;
+    height: 10vmin;
+    display: flex;
+    flex-flow: row;
+    margin: auto;
+    background-color: #aaa;
+    justify-content: center;
+}
+
+#reset{
+    right: 30vmin;
+    padding: 5px;
+    display: flex;
+    flex-flow: column;
+    align-self: center;
+}
+
+#square-div-container{
+    margin: auto;
+    width: 90vmin;
+    height: 90vmin;
+    display: grid;
+}
+
+.square-div{
+    background-color: #fefefe;
+}
+
+.square-div:hover{
+    background-color: #efefef;
+}
