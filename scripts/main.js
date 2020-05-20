@@ -35,7 +35,7 @@ const resetGridButton = document.querySelector("button");
 const resetGridInput = document.querySelector("#reset-grid-input");
 
 resetGridButton.addEventListener("click", () =>{
-    if(isNaN(resetGridInput.value)){
+    if(isNaN(resetGridInput.value) || resetGridInput.value == 0){
         createGrid(50);
     } else {
         createGrid(resetGridInput.value);
